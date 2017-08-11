@@ -1,0 +1,11 @@
+<suite name="SuiteName" parallel="false">
+    <test name="TestName_1" preserve-order="true" >
+        <classes>
+            <class name="com.selenium.test.testng.tests.SimpleTest">
+                <methods>
+                    <include name="testFillGoogleForm"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

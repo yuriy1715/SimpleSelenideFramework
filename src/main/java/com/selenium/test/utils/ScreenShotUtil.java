@@ -1,8 +1,10 @@
 package com.selenium.test.utils;
 
 
+
+
 import com.codeborne.selenide.Screenshots;
-import com.google.common.io.Files;
+
 
 import java.io.File;
 
@@ -17,7 +19,7 @@ public class ScreenShotUtil {
      */
     public static void takeScreenShot() {
 //        You could to something like this and save file as you want :
-        File screenShotFile = Screenshots.takeScreenShotAsFile();
+        File screenShotFile = Screenshots.getScreenShotAsFile();
         System.out.println("ScreenShot method called");
 
     }

@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import ru.yandex.qatools.allure.annotations.Attachment;
+
 
 import static com.google.common.io.Files.toByteArray;
 
@@ -31,7 +31,7 @@ public class TestListener implements ITestListener {
         saveScreenshot(iTestResult.getMethod().getMethodName());
     }
 
-    @Attachment(value = "{0}")
+    
     public byte[] saveScreenshot(String screenshotName) {
         try {
             File scrFile = ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.FILE);
